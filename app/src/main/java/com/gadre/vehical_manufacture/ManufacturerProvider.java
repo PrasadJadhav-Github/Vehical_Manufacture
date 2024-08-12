@@ -30,11 +30,10 @@ public class ManufacturerProvider {
         carInfoData.setResults(new ArrayList<Manufacturer>());
         List<VehicalType> list = new ArrayList<>();
         list.add(new VehicalType(true,"Truck"));
-        carInfoData.getResults().add(new Manufacturer("India","Mahindra",1,"Mahindra,Ind",List<>);
+        carInfoData.getResults().add(new Manufacturer("India","Mahindra",1,"Mahindra,Ind",list));
 
 
 
-        carInfoData.s
 
     }
 
