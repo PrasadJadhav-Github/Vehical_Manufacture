@@ -9,7 +9,7 @@ public class CarInfoDataClass {
     private List<Manufacturer> results;
 
 
-    public int getCount() {
+    public int getCount(String usa) {
         return count;
     }
 
@@ -17,7 +17,7 @@ public class CarInfoDataClass {
         this.count = count;
     }
 
-    public String getMessage() {
+    public String getMessage(String responseReturnedSuccessfully) {
         return message;
     }
 
@@ -25,7 +25,7 @@ public class CarInfoDataClass {
         this.message = message;
     }
 
-    public String getSearchCriteria() {
+    public String getSearchCriteria(String aNull) {
         return searchCriteria;
     }
 
@@ -33,7 +33,7 @@ public class CarInfoDataClass {
         this.searchCriteria = searchCriteria;
     }
 
-    public List<Manufacturer> getResults() {
+    public List<Manufacturer> getResults(String aNull) {
         return results;
     }
 
