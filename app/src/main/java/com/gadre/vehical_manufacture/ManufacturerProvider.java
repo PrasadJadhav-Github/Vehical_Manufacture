@@ -1,9 +1,13 @@
 package com.gadre.vehical_manufacture;
 
+import static java.util.Collections.list;
+
 import com.gadre.vehical_manufacture.data.CarInfoDataClass;
 import com.gadre.vehical_manufacture.data.Manufacturer;
+import com.gadre.vehical_manufacture.data.VehicalType;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ManufacturerProvider {
 
@@ -15,6 +19,7 @@ public class ManufacturerProvider {
 
 
 
+
     // Private constructor to prevent instantiation
     private ManufacturerProvider() {
         // Initialize the CarInfoDataClass object
@@ -22,7 +27,14 @@ public class ManufacturerProvider {
         carInfoData.setCount(1);
         carInfoData.setMessage("Response returned successfully");
         carInfoData.setSearchCriteria("null");
-        carInfoData.setResults(new ArrayList<>());
+        carInfoData.setResults(new ArrayList<Manufacturer>());
+        List<VehicalType> list = new ArrayList<>();
+        list.add(new VehicalType(true,"Truck"));
+        carInfoData.getResults().add(new Manufacturer("India","Mahindra",1,"Mahindra,Ind",List<>);
+
+
+
+        carInfoData.s
 
     }
 

@@ -10,6 +10,14 @@ public class Manufacturer {
     private List<VehicalType> vehicalTypes;
 
 
+    public Manufacturer(String countryName, String mrfCommonName, int mrfID, String mrfName, List<VehicalType> vehicalTypes) {
+        this.countryName = countryName;
+        this.mrfCommonName = mrfCommonName;
+        this.mrfID = mrfID;
+        this.mrfName = mrfName;
+        this.vehicalTypes = vehicalTypes;
+    }
+
     public String getCountryName() {
         return countryName;
     }

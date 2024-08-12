@@ -5,6 +5,11 @@ public class VehicalType {
     private Boolean isPrimary;
     private String name;
 
+    public VehicalType(Boolean isPrimary, String name) {
+        this.isPrimary = isPrimary;
+        this.name = name;
+    }
+
     public Boolean getIsPrimary() {
         return isPrimary;
     }

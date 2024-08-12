@@ -25,7 +25,7 @@ public class CarInfoDataClass {
         this.message = message;
     }
 
-    public String getSearchCriteria(String aNull) {
+    public String getSearchCriteria() {
         return searchCriteria;
     }
 
@@ -33,7 +33,7 @@ public class CarInfoDataClass {
         this.searchCriteria = searchCriteria;
     }
 
-    public List<Manufacturer> getResults(String aNull) {
+    public List<Manufacturer> getResults() {
         return results;
     }
 
