@@ -1,8 +1,12 @@
 package com.gadre.vehical_manufacture.data;
 
+import com.google.gson.annotations.SerializedName;
+
 public class VehicalType {
 
+    @SerializedName("IsPrimary")
     private Boolean isPrimary;
+    @SerializedName("Name")
     private String name;
 
     public VehicalType(Boolean isPrimary, String name) {

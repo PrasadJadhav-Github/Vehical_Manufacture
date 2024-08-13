@@ -20,38 +20,38 @@ public class ManufacturerProvider {
 
     // Private constructor to prevent instantiation
     private ManufacturerProvider() {
-        // Initialize the CarInfoDataClass object
-        carInfoData = new CarInfoDataClass();
-        carInfoData.setCount(1);
-        carInfoData.setMessage("Response returned successfully");
-        carInfoData.setSearchCriteria(null);
-        carInfoData.setResults(new ArrayList<Manufacturer>());
-        List<VehicalType> list1 = new ArrayList<>();
-        list1.add(new VehicalType(true,"Truck"));
-        carInfoData.getResults().add(new Manufacturer("India","Mahindra",956,"Mahindra,Ind",list1));
-
-        carInfoData.setCount(2);
-        List<VehicalType> list2 =new ArrayList<>();
-        list2.add(new VehicalType(true,"Passenger Car"));
-        carInfoData.getResults().add(new Manufacturer("UNITED KINGDOM (UK)","Aston Martin",957,"ASTON MARTIN LAGONDA LIMITED",list2));
-
-
-        carInfoData.setCount(3);
-        List<VehicalType> list3=new ArrayList<>();
-        list3.add(new VehicalType(true,"Passenger Car"));
-        carInfoData.getResults().add(new Manufacturer("UNITED STATES (USA)","JLR",958,"JAGUAR LAND ROVER NA, LLC",list3));
-
-
-        carInfoData.setCount(4);
-        List<VehicalType>list4=new ArrayList<>();
-        list4.add(new VehicalType(true,"Passenger Car"));
-        carInfoData.getResults().add(new Manufacturer("UNITED STATES (USA)","null",959,"MASERATI NORTH AMERICA, INC.",list4));
-
-        carInfoData.setCount(5);
-        List<VehicalType>list5=new ArrayList<>();
-        list5.add(new VehicalType(true,"Passenger Car"));
-        carInfoData.getResults().add(new Manufacturer("UNITED STATES (USA)","Rolls Royce",960,"ROLLS ROYCE MOTOR CARS",list5));
-
+//        // Initialize the CarInfoDataClass object
+//        carInfoData = new CarInfoDataClass();
+//        carInfoData.setCount(1);
+//        carInfoData.setMessage("Response returned successfully");
+//        carInfoData.setSearchCriteria(null);
+//        carInfoData.setResults(new ArrayList<Manufacturer>());
+//        List<VehicalType> list1 = new ArrayList<>();
+//        list1.add(new VehicalType(true,"Truck"));
+//        carInfoData.getResults().add(new Manufacturer("India","Mahindra",956,"Mahindra,Ind",list1));
+//
+//        carInfoData.setCount(2);
+//        List<VehicalType> list2 =new ArrayList<>();
+//        list2.add(new VehicalType(true,"Passenger Car"));
+//        carInfoData.getResults().add(new Manufacturer("UNITED KINGDOM (UK)","Aston Martin",957,"ASTON MARTIN LAGONDA LIMITED",list2));
+//
+//
+//        carInfoData.setCount(3);
+//        List<VehicalType> list3=new ArrayList<>();
+//        list3.add(new VehicalType(true,"Passenger Car"));
+//        carInfoData.getResults().add(new Manufacturer("UNITED STATES (USA)","JLR",958,"JAGUAR LAND ROVER NA, LLC",list3));
+//
+//
+//        carInfoData.setCount(4);
+//        List<VehicalType>list4=new ArrayList<>();
+//        list4.add(new VehicalType(true,"Passenger Car"));
+//        carInfoData.getResults().add(new Manufacturer("UNITED STATES (USA)","null",959,"MASERATI NORTH AMERICA, INC.",list4));
+//
+//        carInfoData.setCount(5);
+//        List<VehicalType>list5=new ArrayList<>();
+//        list5.add(new VehicalType(true,"Passenger Car"));
+//        carInfoData.getResults().add(new Manufacturer("UNITED STATES (USA)","Rolls Royce",960,"ROLLS ROYCE MOTOR CARS",list5));
+//
 
     }
 

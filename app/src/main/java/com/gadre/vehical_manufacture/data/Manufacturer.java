@@ -1,12 +1,19 @@
 package com.gadre.vehical_manufacture.data;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class Manufacturer {
+    @SerializedName("Country")
     private String countryName;
+    @SerializedName("Mfr_CommonName")
     private String mrfCommonName;
+    @SerializedName("Mfr_ID")
     private int mrfID;
+    @SerializedName("Mfr_Name")
     private String mrfName;
+    @SerializedName("VehicleTypes")
     private List<VehicalType> vehicalTypes;
 
 

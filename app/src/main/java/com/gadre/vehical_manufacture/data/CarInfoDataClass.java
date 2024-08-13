@@ -1,11 +1,18 @@
 package com.gadre.vehical_manufacture.data;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class CarInfoDataClass {
+    @SerializedName("Count")
     private int count;
+    @SerializedName("Message")
     private String message;
+    @SerializedName("SearchCriteria")
     private String searchCriteria;
+    @SerializedName("Results")
     private List<Manufacturer> results;
 
 
