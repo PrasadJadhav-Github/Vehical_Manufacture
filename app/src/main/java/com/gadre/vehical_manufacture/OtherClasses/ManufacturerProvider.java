@@ -1,6 +1,4 @@
-package com.gadre.vehical_manufacture;
-
-import static java.util.Collections.list;
+package com.gadre.vehical_manufacture.OtherClasses;
 
 import com.gadre.vehical_manufacture.data.CarInfoDataClass;
 import com.gadre.vehical_manufacture.data.Manufacturer;

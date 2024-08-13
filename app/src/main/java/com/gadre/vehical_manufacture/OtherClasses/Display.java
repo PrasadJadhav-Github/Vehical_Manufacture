@@ -1,29 +1,25 @@
-package com.gadre.vehical_manufacture;
+package com.gadre.vehical_manufacture.OtherClasses;
 
-import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+import android.widget.TextView;
+
+import com.gadre.vehical_manufacture.Intercafe.ViewInterface;
+import com.gadre.vehical_manufacture.Intercafe.ViewModelInterface;
 import com.gadre.vehical_manufacture.data.CarInfoDataClass;
 import com.gadre.vehical_manufacture.data.Manufacturer;
 import com.gadre.vehical_manufacture.data.VehicalType;
-import com.gadre.vehical_manufacture.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class Display implements ViewModelInterface {
 
-    private ActivityMainBinding binding;
+    ManufacturerProvider provider = ManufacturerProvider.getInstance();
+    CarInfoDataClass carInfoData = provider.getCarInfoData();
+    private ViewInterface viewInterface;
 
+    // Constructor to accept TextView
+    public Display(ViewInterface viewInterface) {
+       this.viewInterface=viewInterface;
+    }
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-        // Get the singleton instance of ManufacturerProvider
-        ManufacturerProvider provider = ManufacturerProvider.getInstance();
-
-        // Retrieve car info data
-        CarInfoDataClass carInfoData = provider.getCarInfoData();
-
-        // Display the details of each manufacturer
+    public void fetchDataFromSingleton() {
         String cardetails = "";
         //Iterates over each Manufacturer object in the list returned by carInfoData.getResults()
         for (Manufacturer manufacturer : carInfoData.getResults()) {
@@ -37,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
             cardetails += "\n\n";
         }
-        binding.textViewDetails.setText(cardetails);
 
+        viewInterface.DisplayData(cardetails);
     }
 }
