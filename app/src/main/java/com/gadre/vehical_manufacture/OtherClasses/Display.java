@@ -1,13 +1,11 @@
 package com.gadre.vehical_manufacture.OtherClasses;
 
-import android.net.DnsResolver;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.gadre.vehical_manufacture.APiServices.ApiService;
 import com.gadre.vehical_manufacture.APiServices.RetrofitClient;
-import com.gadre.vehical_manufacture.Intercafe.ViewInterface;
-import com.gadre.vehical_manufacture.Intercafe.ViewModelInterface;
+import com.gadre.vehical_manufacture.Interface.ViewInterface;
+import com.gadre.vehical_manufacture.Interface.ViewModelInterface;
 import com.gadre.vehical_manufacture.data.CarInfoDataClass;
 import com.gadre.vehical_manufacture.data.Manufacturer;
 import com.gadre.vehical_manufacture.data.VehicalType;
@@ -42,7 +40,7 @@ public class Display implements ViewModelInterface {
             @Override
             public void onResponse(Call<CarInfoDataClass> call, Response<CarInfoDataClass> response) {
                 String cardetails = "";
-                Log.d("Response", "" + response.message());
+                //Log.d("Response", "" + response.message());
                 CarInfoDataClass carInfoData = response.body();
                 //Iterates over each Manufacturer object in the list returned by carInfoData.getResults()
                 for (Manufacturer manufacturer : carInfoData.getResults()) {
@@ -57,7 +55,7 @@ public class Display implements ViewModelInterface {
                     cardetails += "\n\n";
                 }
 
-                viewInterface.DisplayData(cardetails);
+                viewInterface.DisplayData((ArrayList<Manufacturer>) carInfoData.getResults());
             }
 
             @Override
